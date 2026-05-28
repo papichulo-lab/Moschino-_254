@@ -1,0 +1,32 @@
+SHENKS ULTRAVIOLET MD v2.8.2
+
+
+[UPDATE LOG - 18/05/2026]
+
+[+] Added auto category counter for plugins
+[+] Auto-sync menu with plugins folder
+[+] Fixed media commands - added ffmpeg support
+[+] Added per-category command counts in menu
+[+] Improved error handling for plugin loading
+[+] Added Docker, Heroku, and Railway support
+
+[FIXES]
+[-] Fixed UNCATEGORIZED command spam
+[-] Fixed duplicate commands in menu
+[-] Fixed crash on invalid plugin files
+
+[FEATURES]
+- 500+ Commands across 30+ categories
+- AI, Media, Group, Tools, Games, Anime, and more
+- Fast response with Baileys MD
+- Auto-restart on crash
+- Session save support
+
+[NOTES]
+- Run 'node addcategory.js' after adding new plugins
+- Run 'node syncmenu.js' to sync menu with plugins
+- Owner: shenks
+- Contact: 254726227639
+- Prefix: .
+
+Powered by Shenks Ultra King

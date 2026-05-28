@@ -1,0 +1,16 @@
+build:
+  docker:
+    web: Dockerfile
+
+run:
+  web: npm start
+
+release:
+  command:
+    - npm install
+
+config:
+  OWNER_NUMBER: '254726227639'
+  BOT_NAME: 'SHENKS ULTRAVIOLET MD'
+  PREFIX: '.'
+  MODE: 'public'

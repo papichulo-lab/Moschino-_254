@@ -1,0 +1,43 @@
+{
+  "name": "SHENKS-ULTRAVIOLET-MD",
+  "description": "WhatsApp Bot using Baileys - Shenks Ultraviolet MD",
+  "repository": "https://github.com/yourusername/shenks-ultraviolet-md",
+  "keywords": ["whatsapp", "bot", "baileys", "nodejs"],
+  "env": {
+    "OWNER_NUMBER": {
+      "description": "Owner WhatsApp number with country code. Example: 2547xxxxxxx",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Name of the bot",
+      "value": "SHENKS ULTRAVIOLET MD"
+    },
+    "PREFIX": {
+      "description": "Bot command prefix",
+      "value": "."
+    },
+    "MODE": {
+      "description": "public or self",
+      "value": "public"
+    },
+    "SESSION_ID": {
+      "description": "Paste your session string here if you use pair code",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "npm install"
+  },
+  "stack": "container"
+}
